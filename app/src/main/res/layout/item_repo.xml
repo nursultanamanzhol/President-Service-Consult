@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_margin="8dp"
-    android:elevation="4dp"
-    android:radius="8dp">
+    style="@style/HistoryItemMaterialCardView">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -14,35 +10,33 @@
 
         <TextView
             android:id="@+id/textRepoName"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Repository Name"
-            android:textColor="@android:color/black"
-            android:textSize="18sp"
-            android:textStyle="bold"
+            style="@style/TextViewRepoName"
+            android:text=""
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/textForksCount"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="4dp"
-            android:text="Forks: 123"
-            android:textColor="@android:color/black"
-            android:textSize="14sp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="parent"
+            style="@style/TextViewForksCount"
+            android:text=""
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="@+id/textForksTemp"
+            app:layout_constraintStart_toStartOf="@+id/textForksTemp"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
+            android:id="@+id/textForksTemp"
+            style="@style/TextViewForksCount"
+            android:text="Forks"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textForksCount" />
+
+        <TextView
             android:id="@+id/textRepoDescription"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="4dp"
-            android:text="Repository description"
+            style="@style/TextViewForksCount"
+            android:text=""
             android:textColor="@android:color/darker_gray"
-            android:textSize="14sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textRepoName" />
 

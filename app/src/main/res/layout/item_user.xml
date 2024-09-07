@@ -14,29 +14,17 @@
 
         <ImageView
             android:id="@+id/imageAvatar"
-            android:layout_width="48dp"
-            android:layout_height="48dp"
-            android:layout_marginEnd="16dp"
-            android:contentDescription="@string/user_avatar"
-            android:src="@drawable/ic_github_img" />
+            style="@style/ImageAvatarTemp" />
 
-        <!-- TextView для логина пользователя -->
         <TextView
             android:id="@+id/textViewUserName"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="ic_github_img"
-            android:textColor="@color/black" />
+            style="@style/ItemUserName"
+            android:text="" />
 
-        <!-- TextView для отображения счета пользователя -->
         <TextView
             android:id="@+id/textUserScore"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="1230.2234"
-            android:textColor="@android:color/holo_orange_dark"
-            android:textSize="16sp"
+            style="@style/ItemUserScore"
+            android:text=""
             android:textStyle="bold" />
 
     </LinearLayout>
