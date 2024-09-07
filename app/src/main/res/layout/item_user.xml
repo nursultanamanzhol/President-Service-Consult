@@ -2,9 +2,8 @@
 <com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="8dp"
     android:elevation="4dp"
-    android:radius="8dp">
+    android:radius="10dp">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -23,21 +22,12 @@
 
         <!-- TextView для логина пользователя -->
         <TextView
-            android:id="@+id/textView15"
+            android:id="@+id/textViewUserName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="ic_github_img" />
-
-        <TextView
-            android:id="@+id/textUserName"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Novohudonosor"
-            android:textColor="@android:color/black"
-            android:textSize="16sp"
-            android:textStyle="bold" />
+            android:text="ic_github_img"
+            android:textColor="@color/black" />
 
         <!-- TextView для отображения счета пользователя -->
         <TextView

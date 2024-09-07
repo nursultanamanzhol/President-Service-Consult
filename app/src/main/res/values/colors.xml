@@ -9,4 +9,6 @@
     <color name="teal_700">#FF018786</color>
     <color name="purple_700">#FF3700B3</color>
     <color name="blue">#0073CD</color>
+    <color name="backgroundFragments">#f5f5f5</color>
+    <color name="clearSearchBtnColor">#878787</color>
 </resources>
