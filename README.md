@@ -132,8 +132,4 @@ Singleton для работы с Retrofit, который предоставля
   <img src="app/src/main/res/images/Screenshot_20240907-221015_President Service Consult.jpg" alt="Another Screen" width="200"/>
 </p>
 
-## Лицензия
-
-Этот проект находится под лицензией MIT. Для получения дополнительной информации см. файл [LICENSE](LICENSE).
-
 ---
